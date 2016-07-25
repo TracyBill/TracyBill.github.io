@@ -90,7 +90,7 @@
 
 但是在io">
 <meta property="og:type" content="article">
-<meta property="og:title" content="myBlog">
+<meta property="og:title" content="ios 与 Android 对javascript Date()对象的解析">
 <meta property="og:url" content="http://yoursite.com/2016/07/25/date对象/index.html">
 <meta property="og:site_name" content="myBlog">
 <meta property="og:description" content="ios 与 Android 对javascript Date()对象的解析
@@ -102,9 +102,9 @@
 <meta property="og:image" content="http://i2.piimg.com/4851/1766f6f54776f18a.png">
 <meta property="og:image" content="http://i2.piimg.com/4851/749854ff4fb5e8a6.png">
 <meta property="og:image" content="http://i2.piimg.com/4851/2c73fe53276caf66.png">
-<meta property="og:updated_time" content="2016-07-25T04:55:18.699Z">
+<meta property="og:updated_time" content="2016-07-25T05:46:38.696Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="myBlog">
+<meta name="twitter:title" content="ios 与 Android 对javascript Date()对象的解析">
 <meta name="twitter:description" content="ios 与 Android 对javascript Date()对象的解析
 最近在做一个移动端的项目,移动端当然需要兼容安卓和苹果设备啦,其中的一个页面需求就是使用JavaScript 的Date()对象，获取当前系统时间，并与我设置好的一个时间段作比较，然后作出一系列的判断，基本[需求]就是这样子：
 那么问题来了,正常情况下，不管是浏览器还是手机浏览器都会解析这段代码解析成这样： 
@@ -133,7 +133,7 @@
 
   <link rel="canonical" href="http://yoursite.com/2016/07/25/date对象/"/>
 
-  <title>  | myBlog </title>
+  <title> ios 与 Android 对javascript Date()对象的解析 | myBlog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -253,7 +253,7 @@
             
             
               
-                
+                ios 与 Android 对javascript Date()对象的解析
               
             
           </h1>
@@ -265,7 +265,7 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-25T13:34:30+08:00" content="2016-07-25">
+            <time itemprop="dateCreated" datetime="2016-07-25T13:46:57+08:00" content="2016-07-25">
               2016-07-25
             </time>
           </span>
@@ -293,13 +293,16 @@
       
 
       
-        <h1 id="ios-与-Android-对javascript-Date-对象的解析"><a href="#ios-与-Android-对javascript-Date-对象的解析" class="headerlink" title="ios 与 Android 对javascript Date()对象的解析"></a>ios 与 Android 对javascript Date()对象的解析</h1><blockquote>
+        <h5 id="ios-与-Android-对javascript-Date-对象的解析"><a href="#ios-与-Android-对javascript-Date-对象的解析" class="headerlink" title="ios 与 Android 对javascript Date()对象的解析"></a>ios 与 Android 对javascript Date()对象的解析</h5><blockquote>
 <p>最近在做一个移动端的项目,移动端当然需要兼容安卓和苹果设备啦,其中的一个页面需求就是使用JavaScript 的Date()对象，获取当前系统时间，并与我设置好的一个时间段作比较，然后作出一系列的判断，基本[需求]就是这样子：<br><img src="http://i2.piimg.com/4851/8eb4d01b188a9c06.png" alt="Alt text"></p>
 <p>那么问题来了,正常情况下，不管是浏览器还是手机浏览器都会解析这段代码解析成这样：<br><img src="http://i2.piimg.com/4851/1766f6f54776f18a.png" alt="Alt text"> </p>
 </blockquote>
 <p>但是在ios的设备当中，效果却不如人意 <div style="color: red;font-size: 20px">“Invalid Date”</div><br>如图：<br><img src="http://i2.piimg.com/4851/749854ff4fb5e8a6.png" alt="Alt text"> </p>
 <blockquote>
 <p>后面显示乱码的对应的是(中国标准时间)这几个字，我是在windows下安装了safari浏览器来测的，中文显示乱码，正常来说就是编码方式不对，但是我改过了默认的编码方式，什么utf-8,gb2312,在网上查了一下，一些大神说可以设置，如图：<br><img src="http://i2.piimg.com/4851/2c73fe53276caf66.png" alt="Alt text"><br>各种尝试，但还是没有调过来，最后放弃了。。。</p>
+</blockquote>
+<a id="more"></a>
+<h5 id="个人分析"><a href="#个人分析" class="headerlink" title="个人分析"></a>个人分析</h5><blockquote>
 <p>以上就是我的测试结果<br>安卓对js的Date()对象解析比较好，无论是 </p>
 </blockquote>
 <pre><code>var startDate = new Date(&quot;2016-07-22 00:00:00&quot;);
@@ -310,7 +313,7 @@
 
 var startDate = new Date(&quot;2016/07/22 00:00:00&quot;);这种形式;
 </code></pre><p>就是这”/“和”-“ 折腾了我好久啊，心好累！</p>
-<blockquote>
+<h5 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h5><blockquote>
 <p>最后附上搭救我的那位大神的链接：<a href="http://www.cnblogs.com/keke/p/3372558.html" target="_blank" rel="external">大神</a></p>
 </blockquote>
 
@@ -444,7 +447,7 @@ var startDate = new Date(&quot;2016/07/22 00:00:00&quot;);这种形式;
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#ios-与-Android-对javascript-Date-对象的解析"><span class="nav-number">1.</span> <span class="nav-text">ios 与 Android 对javascript Date()对象的解析</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#ios-与-Android-对javascript-Date-对象的解析"><span class="nav-number">1.</span> <span class="nav-text">ios 与 Android 对javascript Date()对象的解析</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#个人分析"><span class="nav-number">2.</span> <span class="nav-text">个人分析</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#友情链接"><span class="nav-number">3.</span> <span class="nav-text">友情链接</span></a></li></ol></div>
             
           </div>
         </section>
