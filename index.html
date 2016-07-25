@@ -238,6 +238,119 @@
             
               
                 
+                <a class="post-title-link" href="/2016/07/25/date对象/" itemprop="url">
+                  未命名
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-07-25T13:34:30+08:00" content="2016-07-25">
+              2016-07-25
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="ios-与-Android-对javascript-Date-对象的解析"><a href="#ios-与-Android-对javascript-Date-对象的解析" class="headerlink" title="ios 与 Android 对javascript Date()对象的解析"></a>ios 与 Android 对javascript Date()对象的解析</h1><blockquote>
+<p>最近在做一个移动端的项目,移动端当然需要兼容安卓和苹果设备啦,其中的一个页面需求就是使用JavaScript 的Date()对象，获取当前系统时间，并与我设置好的一个时间段作比较，然后作出一系列的判断，基本[需求]就是这样子：<br><img src="http://i2.piimg.com/4851/8eb4d01b188a9c06.png" alt="Alt text"></p>
+<p>那么问题来了,正常情况下，不管是浏览器还是手机浏览器都会解析这段代码解析成这样：<br><img src="http://i2.piimg.com/4851/1766f6f54776f18a.png" alt="Alt text"> </p>
+</blockquote>
+<p>但是在ios的设备当中，效果却不如人意 <div style="color: red;font-size: 20px">“Invalid Date”</div><br>如图：<br><img src="http://i2.piimg.com/4851/749854ff4fb5e8a6.png" alt="Alt text"> </p>
+<blockquote>
+<p>后面显示乱码的对应的是(中国标准时间)这几个字，我是在windows下安装了safari浏览器来测的，中文显示乱码，正常来说就是编码方式不对，但是我改过了默认的编码方式，什么utf-8,gb2312,在网上查了一下，一些大神说可以设置，如图：<br><img src="http://i2.piimg.com/4851/2c73fe53276caf66.png" alt="Alt text"><br>各种尝试，但还是没有调过来，最后放弃了。。。</p>
+<p>以上就是我的测试结果<br>安卓对js的Date()对象解析比较好，无论是 </p>
+</blockquote>
+<pre><code>var startDate = new Date(&quot;2016-07-22 00:00:00&quot;);
+</code></pre><p>还是</p>
+<pre><code>var startDate = new Date(&quot;2016/07/22 00:00:00&quot;);
+</code></pre><p>都是可以很好的解析出来的；<br>而ios却不是的，不管你是iphone4/iphone5/iphone6….     通通不解释</p>
+<pre><code>var startDate = new Date(&quot;2016-07-22 00:00:00&quot;);这种形式，测试出来的结果是解析
+
+var startDate = new Date(&quot;2016/07/22 00:00:00&quot;);这种形式;
+</code></pre><p>就是这”/“和”-“ 折腾了我好久啊，心好累！</p>
+<blockquote>
+<p>最后附上搭救我的那位大神的链接：<a href="http://www.cnblogs.com/keke/p/3372558.html" target="_blank" rel="external">大神</a></p>
+</blockquote>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/07/11/前端面试题/" itemprop="url">
                   前端开发面试题
                 </a>
@@ -601,7 +714,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
